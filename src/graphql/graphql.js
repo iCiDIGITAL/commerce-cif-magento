@@ -104,7 +104,7 @@ function _buildRequest(args, query) {
         uri: `${args.MAGENTO_SCHEMA}://${args.MAGENTO_HOST}/graphql`,
         method: "POST",
         headers: {
-            'Store': 'default',
+            'Store': args.MAGENTO_STORE || 'default',
             'Content-Type': 'application/json',
         },
         json: true,

@@ -45,6 +45,7 @@ function getProduct(args, param, filterKey) {
         MAGENTO_HOST: args.MAGENTO_HOST,
         GRAPHQL_PRODUCT_ATTRIBUTES: args.GRAPHQL_PRODUCT_ATTRIBUTES,
         MAGENTO_MEDIA_PATH: args.MAGENTO_MEDIA_PATH,
+        MAGENTO_STORE: args.MAGENTO_STORE,
         filter: `${filterKey}:"${args[param]}"`
     };
 

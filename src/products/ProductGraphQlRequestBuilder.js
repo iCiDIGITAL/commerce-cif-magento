@@ -51,7 +51,7 @@ class ProductGraphQlRequestBuilder {
                 variables: null
             },
             headers: {
-                'Store': 'default'
+                'Store': this.requestArgs.MAGENTO_STORE|| 'default'
             },
             json: true,
             resolveWithFullResponse: true
